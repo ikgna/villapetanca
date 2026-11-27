@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Villa Petanca – pool and two guest apartments, Elviria, Marbella</title>
+<meta name="description" content="Villa Petanca: renovated villa with a pool and two guest apartments, 700 m from the beach in Las Cumbres de Elviria. For sale, price on request.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Villa Petanca – pool and two guest apartments, Elviria, Marbella">
+<meta property="og:description" content="700 m from the beach. For sale, price on request.">
+<meta property="og:url" content="https://villapetanca.com/">
+<meta property="og:image" content="https://villapetanca.com/img/og.jpg">
+<link rel="canonical" href="https://villapetanca.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FBF9F4; --surface: #FFFFFF; --water: #D5EFEE; --sea: #0B4A5E;
+  --ink: #0C2D38; --ink-2: #29454F; --muted: #55696F; --line: #CFDDDA;
+  --sun: #FFC43D; --on-sea: #F4FBFA; --line-sea: rgba(244, 251, 250, .24);
+  --font-head: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-text: "Figtree", system-ui, sans-serif;
+  --t-h1: clamp(2.1rem, 1rem + 3.6vw, 4rem);
+  --t-h2: clamp(1.9rem, 1.1rem + 2.6vw, 3.25rem);
+  --t-h3: clamp(1.25rem, 1.05rem + .8vw, 1.6rem);
+  --t-big: clamp(2.4rem, 1.4rem + 3.6vw, 4.5rem);
+  --t-body: clamp(1rem, .96rem + .2vw, 1.125rem);
+  --gap: clamp(16px, 4vw, 48px);
+  --section: clamp(4.5rem, 3rem + 6vw, 8.5rem);
+  --r: 20px;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink-2); font: 400 var(--t-body)/1.6 var(--font-text); }
+img { display: block; max-width: 100%; }
+[hidden] { display: none !important; }
+::selection { background: var(--sun); color: var(--ink); }
+:focus-visible { outline: 3px solid var(--sun); outline-offset: 3px; }
+h1, h2, h3 { margin: 0; color: var(--ink); font-family: var(--font-head); font-weight: 700; letter-spacing: -0.025em; text-wrap: balance; }
+h1 { font-size: var(--t-h1); line-height: 1.04; }
+h2 { font-size: var(--t-h2); line-height: 1.08; }
+h3 { font-size: var(--t-h3); line-height: 1.2; letter-spacing: -0.015em; }
+p { margin: 0; }
+ul { list-style: none; margin: 0; padding: 0; }
+
+.top { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 var(--gap); }
+.brand { font: 700 1.5rem/1.15 var(--font-head); color: var(--ink); }
+.brand span { display: block; font: 400 .9rem/1.3 var(--font-text); color: var(--muted); }
+.menu { display: flex; gap: 8px; margin-left: auto; }
+.menu a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; color: var(--ink); font-weight: 600; font-size: .95rem; text-decoration: none; text-underline-offset: 6px; text-decoration-thickness: 2px; }
+.menu a:hover { text-decoration: underline; text-decoration-color: var(--sun); }
+.langs { display: flex; gap: 4px; padding: 4px; background: var(--water); border-radius: 999px; }
+.langs button { min-width: 44px; min-height: 40px; border: 0; border-radius: 999px; background: transparent; font: 600 .9rem var(--font-text); color: var(--ink); cursor: pointer; }
+.langs button[aria-pressed="true"] { background: var(--sea); color: var(--on-sea); }
+
+.hero-photo { width: 100%; height: clamp(300px, calc(100svh - 262px), 860px); object-fit: cover; object-position: 50% 82%; }
+.panel { position: relative; margin: -32px var(--gap) 0; padding: clamp(20px, 2.2vw, 32px) clamp(24px, 3.4vw, 48px); border-radius: var(--r);
+  background: var(--sea); color: var(--on-sea); box-shadow: 0 24px 48px -24px rgba(11, 74, 94, .55);
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px 48px; align-items: end; }
+.panel h1 { color: #fff; max-width: 19em; font-size: clamp(2rem, 1rem + 2.7vw, 3.25rem); }
+.panel .sub { margin-top: 10px; max-width: 60ch; }
+.act { display: grid; gap: 12px; justify-items: center; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 56px; padding: 0 32px; border: 0; border-radius: 999px;
+  background: var(--sun); color: var(--ink); font: 600 var(--t-body) var(--font-text); text-decoration: none; white-space: nowrap; cursor: pointer;
+  transition: transform .16s var(--ease), box-shadow .32s var(--ease); }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 14px 28px -12px rgba(12, 45, 56, .45); }
+.btn:active { transform: scale(.98); }
+.note { font-size: .9rem; }
+
+.facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin: var(--gap) var(--gap) 0; padding: 32px clamp(24px, 3.4vw, 48px); background: var(--water); border-radius: var(--r); }
+.facts b { display: block; font: 700 clamp(1.8rem, 1.2rem + 1.8vw, 2.75rem)/1.1 var(--font-head); color: var(--ink); font-variant-numeric: tabular-nums; }
+
+section[id] { scroll-margin-top: 16px; }
+.sec { padding: var(--section) var(--gap); max-width: 1440px; margin: 0 auto; }
+
+.ph { display: block; width: 100%; height: 100%; padding: 0; border: 0; background: var(--water); border-radius: var(--r); overflow: hidden; cursor: zoom-in; }
+.ph img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); }
+.ph:hover img { transform: scale(1.03); }
+
+/* вилла: крупное фото + текст, под ними асимметричная мозаика */
+.villa-top { display: grid; grid-template-columns: 1.55fr 1fr; gap: var(--gap); align-items: center; }
+.villa-top .ph { aspect-ratio: 3 / 2; height: auto; }
+.lead { margin-top: 20px; }
+.lines { margin-top: 28px; }
+.lines li { padding: 14px 0; border-top: 1px solid var(--line); color: var(--ink); font-weight: 600; }
+.mosaic { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; margin-top: var(--gap); }
+.mosaic .ph { aspect-ratio: 3 / 2; height: auto; }
+.mosaic .a { grid-column: span 7; } .mosaic .b { grid-column: span 5; }
+.mosaic .a, .mosaic .b { aspect-ratio: auto; height: clamp(220px, 32vw, 460px); }
+
+/* гостевой дом: синий блок */
+.guest { margin: 0 var(--gap); border-radius: var(--r); background: var(--sea); color: var(--on-sea); padding: clamp(24px, 4vw, 64px); }
+.guest h2, .guest h3 { color: #fff; }
+.guest-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: var(--gap); align-items: center; }
+.guest .ph { aspect-ratio: 3 / 2; height: auto; background: var(--ink); }
+.flats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0 24px; margin-top: var(--gap); }
+.flats li { border-top: 1px solid var(--line-sea); padding-top: 16px; }
+.flats b { display: block; font: 700 var(--t-h3)/1.25 var(--font-head); color: #fff; margin-bottom: 6px; }
+
+/* оснащение: крупная типографика строками */
+.tech h2 { max-width: 16em; }
+.tech ul { margin-top: var(--gap); }
+.tech li { display: grid; grid-template-columns: 1fr 1.4fr; gap: 8px var(--gap); align-items: baseline; padding: 28px 0; border-top: 2px solid var(--ink); }
+.tech b { font: 700 var(--t-big)/1 var(--font-head); letter-spacing: -0.03em; color: var(--ink); }
+.tech span { font-size: 1.15em; max-width: 44ch; }
+
+/* участок: фото во всю ширину + план сверху */
+.wide { width: 100%; }
+.wide .ph { border-radius: 0; height: clamp(260px, 52vw, 720px); }
+.wide .ph img { object-position: 50% 65%; }
+.out-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: var(--gap); align-items: start; }
+.out-grid .ph { aspect-ratio: 7 / 5; height: auto; }
+
+/* расположение: расстояния */
+.place { background: var(--water); }
+.dist { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); margin-top: var(--gap); }
+.dist b { display: block; font: 700 var(--t-big)/1 var(--font-head); letter-spacing: -0.03em; color: var(--ink); margin-bottom: 8px; font-variant-numeric: tabular-nums; }
+.near { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); margin-top: var(--gap); padding-top: 28px; border-top: 1px solid rgba(12, 45, 56, .2); }
+.near h3 { margin-bottom: 8px; font-size: clamp(1.5rem, 1.15rem + 1.1vw, 2.1rem); }
+.dist span { display: block; max-width: 28ch; color: var(--ink); font-size: clamp(1.4rem, 1.05rem + 1.3vw, 2.1rem); line-height: 1.35; }
+.near p { max-width: 34ch; font-size: clamp(1.2rem, 1.05rem + .6vw, 1.55rem); line-height: 1.45; }
+
+/* галерея */
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: var(--gap); }
+.grid .ph { aspect-ratio: 3 / 2; height: auto; border-radius: 12px; }
+
+/* связь */
+.contact { margin: 0 var(--gap) var(--gap); border-radius: var(--r); overflow: hidden; background: var(--sea); color: var(--on-sea); display: grid; grid-template-columns: 1fr 1fr; }
+.contact > div { padding: clamp(28px, 5vw, 72px); align-self: center; }
+.contact h2 { color: #fff; }
+.contact p { margin-top: 16px; }
+.contact .btns { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin-top: 32px; }
+.contact .link { color: #fff; display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; }
+.todo { margin-top: 32px; padding: 18px 22px; border: 2px dashed var(--sun); border-radius: 12px; color: #fff; font-weight: 600; }
+.contact img { width: 100%; height: 100%; min-height: 280px; object-fit: cover; }
+footer { padding: 8px var(--gap) 40px; font-size: .9rem; color: var(--muted); }
+
+.float { position: fixed; right: 24px; bottom: 24px; z-index: 5; box-shadow: 0 12px 32px -8px rgba(12, 45, 56, .45); opacity: 0; visibility: hidden; transform: translateY(12px); transition: opacity .32s var(--ease), transform .32s var(--ease), visibility .32s; }
+.float.on { opacity: 1; visibility: visible; transform: none; }
+
+dialog { width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: rgba(6, 24, 31, .96); color: #fff; }
+dialog[open] { display: grid; grid-template-columns: 100%; grid-template-rows: auto minmax(0, 1fr) auto; }
+dialog::backdrop { background: rgba(6, 24, 31, .96); }
+.lb-top { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; font-variant-numeric: tabular-nums; }
+.lb-img { position: relative; min-height: 0; touch-action: pan-y; }
+.lb-img img { position: absolute; top: 0; left: 12px; width: calc(100% - 24px); height: 100%; max-width: none; object-fit: contain; }
+dialog .row { display: flex; justify-content: center; gap: 16px; padding: 16px; }
+.round { width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,.5); background: transparent; color: #fff; font-size: 1.4rem; cursor: pointer; }
+.round:hover { background: rgba(255,255,255,.12); }
+
+@media (max-width: 1200px) { .menu { display: none; } }
+@media (max-width: 1100px) { .villa-top { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) {
+  header.top { flex-wrap: wrap; gap: 8px; padding-top: 10px; padding-bottom: 10px; }
+  .top .langs { width: 100%; justify-content: space-between; }
+  .top .langs button { flex: 1; }
+}
+@media (max-width: 900px) {
+  .villa-top, .guest-grid, .out-grid, .contact { grid-template-columns: 1fr; }
+  .flats { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 820px) {
+  .hero-photo { height: 30svh; min-height: 220px; object-position: 38% 50%; }
+  .panel { margin: -24px 12px 0; grid-template-columns: 1fr; }
+  .act { justify-items: stretch; text-align: center; }
+  .facts { grid-template-columns: 1fr 1fr; margin: 12px 12px 0; }
+  .top { padding: 0 16px; }
+  .brand { font-size: 1.3rem; }
+}
+@media (max-width: 640px) {
+  .sec { padding-left: 16px; padding-right: 16px; }
+  .mosaic .a, .mosaic .b { grid-column: span 12; height: auto; aspect-ratio: 3 / 2; }
+  .guest, .contact { margin-left: 12px; margin-right: 12px; }
+  .tech li, .dist, .near { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .float { left: 12px; right: 12px; bottom: 12px; }
+}
+@media (max-width: 420px) { .flats { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">Villa Petanca<span>Las Cumbres de Elviria, Marbella</span></div>
+  <nav class="menu">
+    <a href="#villa" data-t="m1">The villa</a>
+    <a href="#guest" data-t="m2">Guest house</a>
+    <a href="#outdoors" data-t="m3">Outdoors</a>
+    <a href="#location" data-t="m4">Location</a>
+    <a href="#photos" data-t="m5">Photos</a>
+  </nav>
+  <div class="langs" role="group" aria-label="Language">
+    <button type="button" data-lang="en" aria-pressed="true">EN</button>
+    <button type="button" data-lang="es" aria-pressed="false">ES</button>
+    <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+    <button type="button" data-lang="de" aria-pressed="false">DE</button>
+    <button type="button" data-lang="sv" aria-pressed="false">SV</button>
+  </div>
+</header>
+
+<main>
+  <img class="hero-photo" src="img/DSCF1664-1800.webp" srcset="img/DSCF1664-900.webp 900w, img/DSCF1664-1800.webp 1800w" sizes="100vw" width="1800" height="1200" alt="The villa lit up in the evening" data-alt="evening" fetchpriority="high">
+
+  <div class="panel">
+    <div>
+      <h1 data-t="h1">Villa with a pool and two guest apartments</h1>
+      <p class="sub" data-t="sub">Fully renovated, in Las Cumbres de Elviria. 700&nbsp;m from the beach.</p>
+    </div>
+    <div class="act">
+      <a class="btn" id="heroBtn" href="#contact" data-t="cta">Request the price</a>
+      <p class="note" data-t="note">For sale · price on request</p>
+    </div>
+  </div>
+
+  <div class="facts">
+    <p><b data-t="n1">241 m²</b><span data-t="f1">built area</span></p>
+    <p><b data-t="n2">1,130 m²</b><span data-t="f2">plot</span></p>
+    <p><b>3 + 2</b><span data-t="f3">bedrooms: villa and guest house</span></p>
+    <p><b>700 m</b><span data-t="f4">to the beach, about 8 minutes on foot</span></p>
+  </div>
+
+  <section class="sec" id="villa">
+    <div class="villa-top">
+      <button type="button" class="ph"><img src="img/DSCF1225-900.webp" data-full="img/DSCF1225-1800.webp" width="900" height="600" loading="lazy" alt="Living room" data-alt="living"></button>
+      <div>
+        <h2 data-t="v_h">A single-storey villa, fully renovated</h2>
+        <p class="lead" data-t="v_p">Modern materials and engineering throughout, with a spacious open-plan kitchen and living room.</p>
+        <ul class="lines">
+          <li data-t="v1">Open-plan kitchen and living room with built-in appliances</li>
+          <li data-t="v2">3 bedrooms</li>
+          <li data-t="v3">3 bathrooms and a guest toilet</li>
+          <li data-t="v4">Laundry room</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mosaic">
+      <button type="button" class="ph a"><img src="img/DSCF1134-900.webp" data-full="img/DSCF1134-1800.webp" width="900" height="600" loading="lazy" alt="Dining area" data-alt="dining"></button>
+      <button type="button" class="ph b"><img src="img/DSCF1516-900.webp" data-full="img/DSCF1516-1800.webp" width="900" height="600" loading="lazy" alt="Kitchen" data-alt="kitchen"></button>
+      <button type="button" class="ph b"><img src="img/DSCF1250-900.webp" data-full="img/DSCF1250-1800.webp" width="900" height="600" loading="lazy" alt="Bedroom" data-alt="bedroom"></button>
+      <button type="button" class="ph a"><img src="img/DSCF1369-900.webp" data-full="img/DSCF1369-1800.webp" width="900" height="600" loading="lazy" alt="Bathroom" data-alt="bathroom"></button>
+    </div>
+  </section>
+
+  <section class="guest" id="guest">
+    <div class="guest-grid">
+      <div>
+        <h2 data-t="g_h">Two independent guest apartments</h2>
+        <p class="lead" data-t="g_p">A separate guest house with two apartments, each with its own entrance.</p>
+      </div>
+      <button type="button" class="ph"><img src="img/DSCF1706-900.webp" data-full="img/DSCF1706-1800.webp" width="900" height="600" loading="lazy" alt="Guest house in the evening" data-alt="guest"></button>
+    </div>
+    <ul class="flats">
+      <li><b data-t="g1">Bedroom</b><span data-t="g1p">in each apartment</span></li>
+      <li><b data-t="g2">Living-dining room</b><span data-t="g2p">with an equipped kitchen</span></li>
+      <li><b data-t="g3">Bathroom</b><span data-t="g3p">in each apartment</span></li>
+      <li><b data-t="g4">Own climate system</b><span data-t="g4p">independent heating and air conditioning</span></li>
+    </ul>
+  </section>
+
+  <section class="sec tech">
+    <h2 data-t="t_h">Comfort in the main villa</h2>
+    <ul>
+      <li><b>Daikin</b><span data-t="t1">Aerothermal system.</span></li>
+      <li><b>Uponor</b><span data-t="t2">Water underfloor heating with temperature control zone by zone.</span></li>
+      <li><b>Alexa</b><span data-t="t3">Smart home system controlled through Alexa.</span></li>
+    </ul>
+  </section>
+
+  <section id="outdoors">
+    <div class="wide">
+      <button type="button" class="ph"><img src="img/DSCF0955-1800.webp" srcset="img/DSCF0955-900.webp 900w, img/DSCF0955-1800.webp 1800w" sizes="100vw" data-full="img/DSCF0955-1800.webp" width="1800" height="1200" loading="lazy" alt="Swimming pool" data-alt="pool"></button>
+    </div>
+    <div class="sec out-grid">
+      <div>
+        <h2 data-t="o_h">Pool, garden and stone terraces</h2>
+        <ul class="lines">
+          <li data-t="o1">Swimming pool 8.4 × 3.9 m (external dimensions)</li>
+          <li data-t="o2">Fenced plot with a garden</li>
+          <li data-t="o3">Natural stone terraces</li>
+          <li data-t="o4">Barbecue area</li>
+          <li data-t="o5">2 parking spaces behind an automatic gate</li>
+          <li data-t="o6">Guest parking</li>
+        </ul>
+      </div>
+      <button type="button" class="ph"><img src="img/DJI_0706-900.webp" data-full="img/DJI_0706-1800.webp" width="900" height="643" loading="lazy" alt="Aerial view of the plot" data-alt="aerial"></button>
+    </div>
+  </section>
+
+  <section class="place" id="location">
+    <div class="sec">
+      <h2 data-t="l_h">Las Cumbres de Elviria, Marbella</h2>
+      <div class="dist">
+        <p><b>700 m</b><span data-t="l1">to the beach, about 8 minutes on foot</span></p>
+        <p><b>7–10 min</b><span data-t="l2">to the centre of Marbella</span></p>
+      </div>
+      <div class="near">
+        <div><h3 data-t="l3">Within walking distance</h3><p data-t="l3p">Supermarkets, cafés, restaurants and a pharmacy.</p></div>
+        <div><h3 data-t="l4">In the area</h3><p data-t="l4p">El Platero school and Santa María golf club.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="photos">
+    <h2 data-t="p_h">Photos</h2>
+    <div class="grid">
+      <button type="button" class="ph"><img src="img/DJI_0704-900.webp" data-full="img/DJI_0704-1800.webp" width="900" height="643" loading="lazy" alt="Aerial view" data-alt="aerial"></button>
+      <button type="button" class="ph"><img src="img/DJI_0713-900.webp" data-full="img/DJI_0713-1800.webp" width="900" height="675" loading="lazy" alt="Aerial view" data-alt="aerial"></button>
+      <button type="button" class="ph"><img src="img/DSCF0941-900.webp" data-full="img/DSCF0941-1800.webp" width="900" height="600" loading="lazy" alt="Pool" data-alt="pool"></button>
+      <button type="button" class="ph"><img src="img/DSCF0927-900.webp" data-full="img/DSCF0927-1800.webp" width="900" height="600" loading="lazy" alt="Pool" data-alt="pool"></button>
+      <button type="button" class="ph"><img src="img/DSCF0969-900.webp" data-full="img/DSCF0969-1800.webp" width="900" height="600" loading="lazy" alt="Terrace" data-alt="terrace"></button>
+      <button type="button" class="ph"><img src="img/DSCF0983-900.webp" data-full="img/DSCF0983-1800.webp" width="900" height="600" loading="lazy" alt="Exterior" data-alt="exterior"></button>
+      <button type="button" class="ph"><img src="img/DSCF1000-900.webp" data-full="img/DSCF1000-1800.webp" width="900" height="600" loading="lazy" alt="Gate and parking" data-alt="parking"></button>
+      <button type="button" class="ph"><img src="img/DSCF1155-900.webp" data-full="img/DSCF1155-1800.webp" width="900" height="600" loading="lazy" alt="Dining area" data-alt="dining"></button>
+      <button type="button" class="ph"><img src="img/DSCF1460-900.webp" data-full="img/DSCF1460-1800.webp" width="900" height="600" loading="lazy" alt="Living room" data-alt="living"></button>
+      <button type="button" class="ph"><img src="img/DSCF1502-900.webp" data-full="img/DSCF1502-1800.webp" width="900" height="600" loading="lazy" alt="Dining area" data-alt="dining"></button>
+      <button type="button" class="ph"><img src="img/DSCF1537-900.webp" data-full="img/DSCF1537-1800.webp" width="900" height="600" loading="lazy" alt="Kitchen" data-alt="kitchen"></button>
+      <button type="button" class="ph"><img src="img/DSCF1349-900.webp" data-full="img/DSCF1349-1800.webp" width="900" height="600" loading="lazy" alt="Bedroom" data-alt="bedroom"></button>
+      <button type="button" class="ph"><img src="img/DSCF1362-900.webp" data-full="img/DSCF1362-1800.webp" width="900" height="600" loading="lazy" alt="Walk-in wardrobe" data-alt="wardrobe"></button>
+      <button type="button" class="ph"><img src="img/DSCF1197-900.webp" data-full="img/DSCF1197-1800.webp" width="900" height="600" loading="lazy" alt="Bedroom" data-alt="bedroom"></button>
+      <button type="button" class="ph"><img src="img/DSCF1306-900.webp" data-full="img/DSCF1306-1800.webp" width="900" height="600" loading="lazy" alt="Bedroom" data-alt="bedroom"></button>
+      <button type="button" class="ph"><img src="img/DSCF1383-900.webp" data-full="img/DSCF1383-1800.webp" width="900" height="600" loading="lazy" alt="Bathroom" data-alt="bathroom"></button>
+      <button type="button" class="ph"><img src="img/DSCF1411-900.webp" data-full="img/DSCF1411-1800.webp" width="900" height="600" loading="lazy" alt="Bathroom" data-alt="bathroom"></button>
+      <button type="button" class="ph"><img src="img/DSCF1432-900.webp" data-full="img/DSCF1432-1800.webp" width="900" height="600" loading="lazy" alt="Guest toilet" data-alt="toilet"></button>
+      <button type="button" class="ph"><img src="img/DSCF1551-900.webp" data-full="img/DSCF1551-1800.webp" width="900" height="600" loading="lazy" alt="Pool at sunset" data-alt="pool"></button>
+      <button type="button" class="ph"><img src="img/DSCF1614-900.webp" data-full="img/DSCF1614-1800.webp" width="900" height="600" loading="lazy" alt="Villa in the evening" data-alt="evening"></button>
+      <button type="button" class="ph"><img src="img/DSCF1699-900.webp" data-full="img/DSCF1699-1800.webp" width="900" height="600" loading="lazy" alt="Garden path at night" data-alt="garden"></button>
+      <button type="button" class="ph"><img src="img/DSCF1692-900.webp" data-full="img/DSCF1692-1800.webp" width="900" height="600" loading="lazy" alt="Villa at night" data-alt="evening"></button>
+      <button type="button" class="ph"><img src="img/DSCF1779-900.webp" data-full="img/DSCF1779-1800.webp" width="900" height="600" loading="lazy" alt="Entrance" data-alt="entrance"></button>
+      <button type="button" class="ph"><img src="img/DSCF1741-900.webp" data-full="img/DSCF1741-1800.webp" width="900" height="600" loading="lazy" alt="View from the street at night" data-alt="evening"></button>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div>
+      <h2 data-t="c_h">Interested in Villa Petanca?</h2>
+      <p data-t="c_p">The villa with its guest house is for sale. Price on request.</p>
+      <!-- Показывается, пока контакт не вписан в CONTACT внизу файла -->
+      <p class="todo" id="todo" data-t="c_todo" hidden>[Contact to be added: WhatsApp or email]</p>
+      <div class="btns" id="btns">
+        <a class="btn" id="send" href="https://wa.me/34634165574" data-t="cta">Request the price</a>
+        <a class="link" id="tel" href="tel:+34634165574">+34 634 16 55 74</a>
+        <a class="link" id="mail" href="mailto:villapetancamarbella@gmail.com">villapetancamarbella@gmail.com</a>
+      </div>
+    </div>
+    <img src="img/DSCF1614-900.webp" srcset="img/DSCF1614-900.webp 900w, img/DSCF1614-1800.webp 1800w" sizes="(max-width: 900px) 100vw, 50vw" width="900" height="600" loading="lazy" alt="Villa in the evening" data-alt="evening">
+  </section>
+</main>
+
+<footer>Villa Petanca · Las Cumbres de Elviria, Marbella · <span data-t="note">For sale · price on request</span></footer>
+
+<a class="btn float" id="float" href="#contact" data-t="cta">Request the price</a>
+
+<dialog id="lb">
+  <div class="lb-top"><span id="lbCount"></span><button type="button" class="round" id="lbClose" data-label="close" aria-label="Close">×</button></div>
+  <div class="lb-img" id="lbArea"><img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAACAkQBADs=" width="1800" height="1200" alt=""></div>
+  <div class="row">
+    <button type="button" class="round" id="lbPrev" data-label="prev" aria-label="Previous photo">←</button>
+    <button type="button" class="round" id="lbNext" data-label="next" aria-label="Next photo">→</button>
+  </div>
+</dialog>
+
+<script>
+/* КОНТАКТ: номер WhatsApp и телефон (с кодом страны), email.
+   При смене контактов поправьте и ссылки в блоке id="contact". */
+const CONTACT = { whatsapp: "+34 634 16 55 74", phone: "+34 634 16 55 74", email: "villapetancamarbella@gmail.com" };
+
+const T = {
+  en: { title: "Villa Petanca – pool and two guest apartments, Elviria, Marbella",
+    m1: "The villa", m2: "Guest house", m3: "Outdoors", m4: "Location", m5: "Photos",
+    h1: "Villa with a pool and two guest apartments", sub: "Fully renovated, in Las Cumbres de Elviria. 700 m from the beach.",
+    cta: "Request the price", note: "For sale · price on request", n1: "241 m²", n2: "1,130 m²",
+    f1: "built area", f2: "plot", f3: "bedrooms: villa and guest house", f4: "to the beach, about 8 minutes on foot",
+    v_h: "A single-storey villa, fully renovated", v_p: "Modern materials and engineering throughout, with a spacious open-plan kitchen and living room.",
+    v1: "Open-plan kitchen and living room with built-in appliances", v2: "3 bedrooms", v3: "3 bathrooms and a guest toilet", v4: "Laundry room",
+    g_h: "Two independent guest apartments", g_p: "A separate guest house with two apartments, each with its own entrance.",
+    g1: "Bedroom", g1p: "in each apartment", g2: "Living-dining room", g2p: "with an equipped kitchen", g3: "Bathroom", g3p: "in each apartment", g4: "Own climate system", g4p: "independent heating and air conditioning",
+    t_h: "Comfort in the main villa", t1: "Aerothermal system.", t2: "Water underfloor heating with temperature control zone by zone.", t3: "Smart home system controlled through Alexa.",
+    o_h: "Pool, garden and stone terraces", o1: "Swimming pool 8.4 × 3.9 m (external dimensions)", o2: "Fenced plot with a garden", o3: "Natural stone terraces", o4: "Barbecue area", o5: "2 parking spaces behind an automatic gate", o6: "Guest parking",
+    l_h: "Las Cumbres de Elviria, Marbella", l1: "to the beach, about 8 minutes on foot", l2: "to the centre of Marbella",
+    l3: "Within walking distance", l3p: "Supermarkets, cafés, restaurants and a pharmacy.", l4: "In the area", l4p: "El Platero school and Santa María golf club.",
+    p_h: "Photos", c_h: "Interested in Villa Petanca?", c_p: "The villa with its guest house is for sale. Price on request.", c_todo: "[Contact to be added: WhatsApp or email]",
+    msg: "Hello, I would like to know the price of Villa Petanca in Las Cumbres de Elviria.",
+    close: "Close", prev: "Previous photo", next: "Next photo",
+    alt: { aerial: "Aerial view of the villa and plot", pool: "Swimming pool", terrace: "Terrace", exterior: "Exterior of the villa", parking: "Entrance gate and parking", living: "Living room", dining: "Dining area", kitchen: "Kitchen", bedroom: "Bedroom", wardrobe: "Walk-in wardrobe", bathroom: "Bathroom", toilet: "Guest toilet", evening: "The villa lit up in the evening", garden: "Garden path in the evening", entrance: "Front door", guest: "Guest house in the evening" } },
+  es: { title: "Villa Petanca – piscina y dos apartamentos de invitados, Elviria, Marbella",
+    m1: "La villa", m2: "Casa de invitados", m3: "Exterior", m4: "Ubicación", m5: "Fotos",
+    h1: "Villa con piscina y dos apartamentos de invitados", sub: "Totalmente reformada, en Las Cumbres de Elviria. A 700 m de la playa.",
+    cta: "Consultar el precio", note: "En venta · precio a consultar", n1: "241 m²", n2: "1.130 m²",
+    f1: "construidos", f2: "de parcela", f3: "dormitorios: villa y casa de invitados", f4: "a la playa, unos 8 minutos a pie",
+    v_h: "Villa de una planta totalmente reformada", v_p: "Materiales e instalaciones modernas, con una amplia cocina abierta al salón.",
+    v1: "Cocina abierta al salón con electrodomésticos integrados", v2: "3 dormitorios", v3: "3 baños y un aseo de cortesía", v4: "Lavadero",
+    g_h: "Dos apartamentos de invitados independientes", g_p: "Una casa de invitados aparte con dos apartamentos, cada uno con su propia entrada.",
+    g1: "Dormitorio", g1p: "en cada apartamento", g2: "Salón-comedor", g2p: "con cocina equipada", g3: "Baño", g3p: "en cada apartamento", g4: "Climatización propia", g4p: "calefacción y aire acondicionado independientes",
+    t_h: "Confort en la villa principal", t1: "Sistema de aerotermia.", t2: "Suelo radiante por agua con control de temperatura por zonas.", t3: "Sistema domótico controlado con Alexa.",
+    o_h: "Piscina, jardín y terrazas de piedra", o1: "Piscina de 8,4 × 3,9 m (medidas exteriores)", o2: "Parcela vallada con jardín", o3: "Terrazas de piedra natural", o4: "Zona de barbacoa", o5: "2 plazas de aparcamiento tras una puerta automática", o6: "Aparcamiento para invitados",
+    l_h: "Las Cumbres de Elviria, Marbella", l1: "a la playa, unos 8 minutos a pie", l2: "al centro de Marbella",
+    l3: "A poca distancia a pie", l3p: "Supermercados, cafeterías, restaurantes y farmacia.", l4: "En la zona", l4p: "Colegio El Platero y club de golf Santa María.",
+    p_h: "Fotos", c_h: "¿Le interesa Villa Petanca?", c_p: "La villa con su casa de invitados está en venta. Precio a consultar.", c_todo: "[Contacto pendiente: WhatsApp o email]",
+    msg: "Hola, me gustaría saber el precio de Villa Petanca, en Las Cumbres de Elviria.",
+    close: "Cerrar", prev: "Foto anterior", next: "Foto siguiente",
+    alt: { aerial: "Vista aérea de la villa y la parcela", pool: "Piscina", terrace: "Terraza", exterior: "Exterior de la villa", parking: "Puerta de entrada y aparcamiento", living: "Salón", dining: "Comedor", kitchen: "Cocina", bedroom: "Dormitorio", wardrobe: "Vestidor", bathroom: "Baño", toilet: "Aseo de cortesía", evening: "La villa iluminada al atardecer", garden: "Camino del jardín al atardecer", entrance: "Puerta principal", guest: "Casa de invitados al atardecer" } },
+  fr: { title: "Villa Petanca – piscine et deux appartements d’amis, Elviria, Marbella",
+    m1: "La villa", m2: "Maison d’amis", m3: "Extérieur", m4: "Situation", m5: "Photos",
+    h1: "Villa avec piscine et deux appartements d’amis", sub: "Entièrement rénovée, à Las Cumbres de Elviria. À 700 m de la plage.",
+    cta: "Demander le prix", note: "À vendre · prix sur demande", n1: "241 m²", n2: "1 130 m²",
+    f1: "de surface construite", f2: "de terrain", f3: "chambres : villa et maison d’amis", f4: "jusqu’à la plage, environ 8 minutes à pied",
+    v_h: "Une villa de plain-pied entièrement rénovée", v_p: "Matériaux et équipements techniques modernes, avec une vaste cuisine ouverte sur le séjour.",
+    v1: "Cuisine ouverte sur le séjour avec électroménager intégré", v2: "3 chambres", v3: "3 salles de bains et des toilettes invités", v4: "Buanderie",
+    g_h: "Deux appartements d’amis indépendants", g_p: "Une maison d’amis séparée avec deux appartements, chacun avec sa propre entrée.",
+    g1: "Chambre", g1p: "dans chaque appartement", g2: "Séjour-salle à manger", g2p: "avec cuisine équipée", g3: "Salle de bains", g3p: "dans chaque appartement", g4: "Climatisation autonome", g4p: "chauffage et climatisation indépendants",
+    t_h: "Le confort de la villa principale", t1: "Système aérothermique.", t2: "Plancher chauffant à eau avec réglage de la température par zones.", t3: "Maison connectée pilotée avec Alexa.",
+    o_h: "Piscine, jardin et terrasses en pierre", o1: "Piscine de 8,4 × 3,9 m (dimensions extérieures)", o2: "Terrain clôturé avec jardin", o3: "Terrasses en pierre naturelle", o4: "Espace barbecue", o5: "2 places de stationnement derrière un portail automatique", o6: "Stationnement pour les invités",
+    l_h: "Las Cumbres de Elviria, Marbella", l1: "jusqu’à la plage, environ 8 minutes à pied", l2: "du centre de Marbella",
+    l3: "Accessibles à pied", l3p: "Supermarchés, cafés, restaurants et pharmacie.", l4: "Dans le quartier", l4p: "École El Platero et club de golf Santa María.",
+    p_h: "Photos", c_h: "Villa Petanca vous intéresse ?", c_p: "La villa et sa maison d’amis sont à vendre. Prix sur demande.", c_todo: "[Contact à ajouter : WhatsApp ou e-mail]",
+    msg: "Bonjour, je souhaite connaître le prix de la Villa Petanca à Las Cumbres de Elviria.",
+    close: "Fermer", prev: "Photo précédente", next: "Photo suivante",
+    alt: { aerial: "Vue aérienne de la villa et du terrain", pool: "Piscine", terrace: "Terrasse", exterior: "Extérieur de la villa", parking: "Portail et stationnement", living: "Séjour", dining: "Salle à manger", kitchen: "Cuisine", bedroom: "Chambre", wardrobe: "Dressing", bathroom: "Salle de bains", toilet: "Toilettes invités", evening: "La villa illuminée en soirée", garden: "Allée du jardin en soirée", entrance: "Porte d’entrée", guest: "Maison d’amis en soirée" } },
+  de: { title: "Villa Petanca – Pool und zwei Gästeapartments, Elviria, Marbella",
+    m1: "Die Villa", m2: "Gästehaus", m3: "Außenbereich", m4: "Lage", m5: "Fotos",
+    h1: "Villa mit Pool und zwei Gästeapartments", sub: "Komplett renoviert, in Las Cumbres de Elviria. 700 m zum Strand.",
+    cta: "Preis anfragen", note: "Zum Verkauf · Preis auf Anfrage", n1: "241 m²", n2: "1.130 m²",
+    f1: "bebaute Fläche", f2: "Grundstück", f3: "Schlafzimmer: Villa und Gästehaus", f4: "zum Strand, etwa 8 Minuten zu Fuß",
+    v_h: "Eingeschossige Villa, komplett renoviert", v_p: "Moderne Materialien und Haustechnik, mit einer großzügigen offenen Wohnküche.",
+    v1: "Offene Wohnküche mit Einbaugeräten", v2: "3 Schlafzimmer", v3: "3 Badezimmer und ein Gäste-WC", v4: "Hauswirtschaftsraum",
+    g_h: "Zwei separate Gästeapartments", g_p: "Ein eigenes Gästehaus mit zwei Apartments, jedes mit separatem Eingang.",
+    g1: "Schlafzimmer", g1p: "in jedem Apartment", g2: "Wohn-Essbereich", g2p: "mit ausgestatteter Küche", g3: "Badezimmer", g3p: "in jedem Apartment", g4: "Eigene Klimatechnik", g4p: "separate Heizung und Klimaanlage",
+    t_h: "Komfort in der Hauptvilla", t1: "Aerothermie-System.", t2: "Wasser-Fußbodenheizung mit zonenweiser Temperaturregelung.", t3: "Smart-Home-System mit Steuerung über Alexa.",
+    o_h: "Pool, Garten und Steinterrassen", o1: "Pool 8,4 × 3,9 m (Außenmaße)", o2: "Eingezäuntes Grundstück mit Garten", o3: "Terrassen aus Naturstein", o4: "Grillbereich", o5: "2 Stellplätze hinter einem automatischen Tor", o6: "Gästeparkplätze",
+    l_h: "Las Cumbres de Elviria, Marbella", l1: "zum Strand, etwa 8 Minuten zu Fuß", l2: "ins Zentrum von Marbella",
+    l3: "Zu Fuß erreichbar", l3p: "Supermärkte, Cafés, Restaurants und eine Apotheke.", l4: "In der Umgebung", l4p: "Schule El Platero und Golfclub Santa María.",
+    p_h: "Fotos", c_h: "Interesse an der Villa Petanca?", c_p: "Die Villa mit Gästehaus steht zum Verkauf. Preis auf Anfrage.", c_todo: "[Kontakt folgt: WhatsApp oder E-Mail]",
+    msg: "Guten Tag, ich möchte den Preis der Villa Petanca in Las Cumbres de Elviria erfahren.",
+    close: "Schließen", prev: "Vorheriges Foto", next: "Nächstes Foto",
+    alt: { aerial: "Luftaufnahme der Villa und des Grundstücks", pool: "Pool", terrace: "Terrasse", exterior: "Außenansicht der Villa", parking: "Einfahrtstor und Stellplätze", living: "Wohnzimmer", dining: "Essbereich", kitchen: "Küche", bedroom: "Schlafzimmer", wardrobe: "Begehbarer Kleiderschrank", bathroom: "Badezimmer", toilet: "Gäste-WC", evening: "Die beleuchtete Villa am Abend", garden: "Gartenweg am Abend", entrance: "Eingangstür", guest: "Gästehaus am Abend" } },
+  sv: { title: "Villa Petanca – pool och två gästlägenheter, Elviria, Marbella",
+    m1: "Villan", m2: "Gästhuset", m3: "Utomhus", m4: "Läget", m5: "Bilder",
+    h1: "Villa med pool och två gästlägenheter", sub: "Totalrenoverad, i Las Cumbres de Elviria. 700 m till stranden.",
+    cta: "Fråga om priset", note: "Till salu · pris på begäran", n1: "241 m²", n2: "1 130 m²",
+    f1: "byggyta", f2: "tomt", f3: "sovrum: villan och gästhuset", f4: "till stranden, cirka 8 minuters promenad",
+    v_h: "Totalrenoverad villa i ett plan", v_p: "Moderna material och tekniska lösningar, med ett rymligt kök i öppen planlösning mot vardagsrummet.",
+    v1: "Öppet kök och vardagsrum med inbyggda vitvaror", v2: "3 sovrum", v3: "3 badrum och en gästtoalett", v4: "Tvättstuga",
+    g_h: "Två separata gästlägenheter", g_p: "Ett fristående gästhus med två lägenheter, var och en med egen ingång.",
+    g1: "Sovrum", g1p: "i varje lägenhet", g2: "Vardagsrum med matplats", g2p: "med utrustat kök", g3: "Badrum", g3p: "i varje lägenhet", g4: "Eget inomhusklimat", g4p: "separat värme och luftkonditionering",
+    t_h: "Komfort i huvudvillan", t1: "Aerotermiskt system.", t2: "Vattenburen golvvärme med temperaturreglering zon för zon.", t3: "Smarta hem-system som styrs via Alexa.",
+    o_h: "Pool, trädgård och stenterrasser", o1: "Pool 8,4 × 3,9 m (yttermått)", o2: "Inhägnad tomt med trädgård", o3: "Terrasser i natursten", o4: "Grillplats", o5: "2 parkeringsplatser bakom en automatisk grind", o6: "Gästparkering",
+    l_h: "Las Cumbres de Elviria, Marbella", l1: "till stranden, cirka 8 minuters promenad", l2: "till Marbellas centrum",
+    l3: "Inom gångavstånd", l3p: "Mataffärer, kaféer, restauranger och apotek.", l4: "I området", l4p: "Skolan El Platero och golfklubben Santa María.",
+    p_h: "Bilder", c_h: "Intresserad av Villa Petanca?", c_p: "Villan med gästhus är till salu. Pris på begäran.", c_todo: "[Kontakt läggs till: WhatsApp eller e-post]",
+    msg: "Hej, jag skulle vilja veta priset på Villa Petanca i Las Cumbres de Elviria.",
+    close: "Stäng", prev: "Föregående bild", next: "Nästa bild",
+    alt: { aerial: "Flygbild över villan och tomten", pool: "Pool", terrace: "Terrass", exterior: "Villans exteriör", parking: "Infartsgrind och parkering", living: "Vardagsrum", dining: "Matplats", kitchen: "Kök", bedroom: "Sovrum", wardrobe: "Walk-in-closet", bathroom: "Badrum", toilet: "Gästtoalett", evening: "Villan upplyst på kvällen", garden: "Trädgårdsgång på kvällen", entrance: "Entrédörr", guest: "Gästhuset på kvällen" } }
+};
+
+const $ = id => document.getElementById(id);
+let lang = "en";
+
+function contactLinks() {
+  const wa = CONTACT.whatsapp.replace(/\D/g, ""), mail = CONTACT.email.trim();
+  if (!wa && !mail) return;
+  const text = encodeURIComponent(T[lang].msg);
+  const mailto = `mailto:${mail}?subject=${encodeURIComponent(T[lang].title)}&body=${text}`;
+  $("todo").hidden = true;
+  $("btns").hidden = false;
+  $("send").href = wa ? `https://wa.me/${wa}?text=${text}` : mailto;
+  $("tel").href = "tel:+" + CONTACT.phone.replace(/\D/g, "");
+  $("tel").textContent = CONTACT.phone;
+  $("mail").hidden = !(wa && mail);
+  $("mail").href = mailto;
+  $("mail").textContent = mail;
+}
+
+function setLang(l) {
+  lang = T[l] ? l : "en";
+  const t = T[lang];
+  document.documentElement.lang = lang;
+  document.title = t.title;
+  document.querySelectorAll("[data-t]").forEach(e => e.textContent = t[e.dataset.t]);
+  document.querySelectorAll("img[data-alt]").forEach(e => e.alt = t.alt[e.dataset.alt]);
+  document.querySelectorAll("[data-label]").forEach(e => e.setAttribute("aria-label", t[e.dataset.label]));
+  document.querySelectorAll("[data-lang]").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === lang));
+  contactLinks();
+}
+document.querySelectorAll("[data-lang]").forEach(b => b.addEventListener("click", () => {
+  setLang(b.dataset.lang);
+  history.replaceState(null, "", "?lang=" + b.dataset.lang + location.hash);
+}));
+setLang(new URLSearchParams(location.search).get("lang") || (navigator.language || "en").slice(0, 2));
+
+/* плавающая кнопка: после первого экрана и пока не виден блок связи */
+if ("IntersectionObserver" in window) {
+  const seen = new Map();
+  const io = new IntersectionObserver(es => {
+    es.forEach(e => seen.set(e.target.id, e));
+    const hero = seen.get("heroBtn"), end = seen.get("contact");
+    $("float").classList.toggle("on", !!hero && !hero.isIntersecting && hero.boundingClientRect.top < 0 && !(end && end.isIntersecting));
+  });
+  io.observe($("heroBtn"));
+  io.observe($("contact"));
+}
+
+/* просмотр фото */
+const shots = [...document.querySelectorAll(".ph")];
+let current = 0;
+function show(i) {
+  current = (i + shots.length) % shots.length;
+  const img = shots[current].querySelector("img");
+  $("lbImg").src = img.dataset.full;
+  $("lbImg").alt = img.alt;
+  $("lbCount").textContent = `${current + 1} / ${shots.length}`;
+}
+shots.forEach((b, i) => b.addEventListener("click", () => { show(i); $("lb").showModal(); }));
+$("lbClose").addEventListener("click", () => $("lb").close());
+$("lbPrev").addEventListener("click", () => show(current - 1));
+$("lbNext").addEventListener("click", () => show(current + 1));
+$("lb").addEventListener("keydown", e => {
+  if (e.key === "ArrowLeft") show(current - 1);
+  if (e.key === "ArrowRight") show(current + 1);
+});
+let startX = null;
+$("lbArea").addEventListener("pointerdown", e => startX = e.clientX);
+$("lbArea").addEventListener("pointerup", e => {
+  if (startX !== null && Math.abs(e.clientX - startX) > 50) show(current + (e.clientX < startX ? 1 : -1));
+  startX = null;
+});
+</script>
+</body>
+</html>
